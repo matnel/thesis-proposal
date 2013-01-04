@@ -6,8 +6,17 @@
 \usepackage{harvard}
 \citationmode{abbr}
 
+\usepackage{booktabs}
+
 \author{Matti Nelimarkka}
 \title{Draft: Supporting Deliberative Discussion with Enhanced Design}
+
+
+%\usepackage{multicol}
+%\usepackage{etoolbox}
+%\patchcmd{\thebibliography}{\section*{\refname}}
+%    {\begin{multicols}{2}[\section*{\refname}]}{}{}
+%\patchcmd{\endthebibliography}{\endlist}{\endlist\end{multicols}}{}{}
 
 \begin{document}
 
@@ -70,16 +79,24 @@ Put simply, e-democracy tools can themselves be viewed as discretely designed in
 \end{quote}
 
 \begin{table}
-\begin{tabular}{lc|l}
-Social structure & & \cite{sukumaran11,underhill03} \\
-Affordances \& limitations & & \cite{kilner05,eklundh94,danet98,donath99} \\ 
-Feedback mechanics & &
+\begin{tabular}{lp{.6\textwidth}}
+\toprule
+\multicolumn{2}{l}{\textbf{Social structure}} \\
+existing participation & \citeasnoun{sukumaran11} \\
+moderation & \citeasnoun{wright07} \\
+\hline
+\multicolumn{2}{l}{\textbf{Affordances \& limitations}} \\
+anonymity & \citeasnoun{kilner05}, \citeasnoun{donath99} \\
+user interface & \citeasnoun{eklundh94} \\
+\hline
+\multicolumn{2}{l}{\textbf{Feedback mechanics}} \\
+\toprule
 \end{tabular} 
 \caption{Possible modalities and related research}
 \label{tab:modalities}
 \end{table}
 
-Even while there is existing experimental research (see Table \ref{tab:modalities}), the three different domains discussed above are not examined together, nor has the research applied the deliberative approach. This has also been pointed in \possessivecite{wright12} work. However, as demonstrated in \citeasnoun{margetts09a} and \citeasnoun{margetts09b}, the experimental method can be used to examine interaction caused by different conditions. In this research proposal the conditions are related to the discussion system, e.g.:
+Even while there is existing (quasi)experimental research (see Table \ref{tab:modalities}), the three different domains discussed above are not examined together, nor has the research applied the deliberative approach. This has also been pointed in \possessivecite{wright12} work. However, as demonstrated in \citeasnoun{margetts09a} and \citeasnoun{margetts09b}, the experimental method can be used to examine interaction caused by different conditions. In this research proposal the conditions are related to the discussion system, e.g.:
 
 \begin{itemize}
 \item anonymity
