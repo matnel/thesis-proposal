@@ -8,6 +8,8 @@
 
 \usepackage{booktabs}
 
+\usepackage{multirow} 
+
 %\date{\textsf{\today}}
 \date{~}
 \author{\textsf{Matti Nelimarkka}}
@@ -25,7 +27,6 @@
 \begin{document}
 
 \maketitle
-\thispagestyle{empty}
 
 \begin{abstract}
 
@@ -36,30 +37,29 @@ A mix of both human-computer interaction (HCI) and political science will be abl
 This work suggests two different evaluation areas: the \textit{the quantity of participation} and \textit{the quality of participation}. The former may focus e.g. in the uptake and long-term use of the system, the amount of contribution, impact of socio-economical and environment factors among others. The latter includes both the more objective quality and the subjective experience of participation. For example, the aim is to examine how thoughtful the discussion (objective quality) and how well the participants felt they were taken in account (subjective quality).
 \end{abstract}
 
-\newpage
-
-\setcounter{page}{1}
-
 \section{Introduction}
 
 Online participation is a widely studied topic, and there are several different approaches to it \citeaffixed{dahlberg11}{c.f.}. One of them is called deliberative democracy\footnote{Shortly defining, deliberative democracy aims at decision making based on reasoned, respectful, open and equal area, which can be also referenced as the \textit{the public sphere} \cite{habermas87,fiskin91,cohen97}. This concept has been studied by political scientists extensively \citeaffixed{ryfe05,dryzek02}{e.g.}. A fundamental requirement for deliberative democracy is a forum for discussion, which may be a town hall meeting, a mini-public or, thanks to the rise of the Internet, an online discussion system \citeaffixed{smith09}{e.g.}.}, and its main aim is to study how online environments can be used to facilitating discussions. Common observations indicate that the current systems used to discuss have not achieved the ideals researchers' had. Problems such as strongly unequal participation \citeaffixed{jen03}{e.g.}, disrespectful comments or non-rational discussions \citeaffixed{pietila02}{e.g.} have been reported.
 
-Most of the the research has focused on studying how political discussion takes place in venues of different kind \citeaffixed{macintosh02,jen03}{e.g.} and evaluated these discussions \citeaffixed{strandberg08,dahlberg01,albrecht06,chadwick03}{e.g.}, however online deliberation research has extended also in non-political forums as a place for discussion \cite{graham12}. This extension indicates the social importance to study the online discussion forms in detail, as they are not only in focus of politics, but in general communication. Also other scholars have approached the topic of online deliberation, however they do not apply the concepts developed there. To demonstrate, \citeasnoun{Sukumaran2011} speaks about '\textit{thoughtful online participation}' and \citeasnoun{Kriplean2012} use term '\textit{reﬂective public thought}', which both have been influenced by deliberative democracy but not framed in that discourse.
+%% IPA paper rework
+%% Maloney (check Giulio's comment)
+
+In the online deliberation research has focused on studying how political discussion takes place in venues of different kind \citeaffixed{macintosh02,jen03,Kriplean2012}{e.g.} and evaluated these discussions \citeaffixed{strandberg08,dahlberg01,albrecht06,chadwick03}{e.g.}, however online deliberation research has extended also in non-political forums as a place for discussion \cite{graham12}. This extension indicates the social importance to study the online discussion forms in detail, as they are not only in focus of politics, but in general communication. Also other scholars have approached the topic of online deliberation, however they do not apply the concepts developed there. To demonstrate, \citeasnoun{Sukumaran2011} speaks about '\textit{thoughtful online participation}' and \citeasnoun{Kriplean2012} use term '\textit{reﬂective public thought}', which both have been influenced by deliberative democracy but not framed in that discourse.
 
 All together, less scholarly focus has been on the design of the discussion forums and the implications of design on the participation \citeaffixed{wright07,Sukumaran2011}{however, e.g.}. This is surprising, as there are still problems related to how people are using these systems, as noted above. Therefore, there is room to improve these systems. This research proposal suggests that studying this design in more detailed manner will support the development of online forums and improve them.
 
 I study, how the design, both technical capabilities of the system combined with the social environment, influence the deliberation and discussion on the system. This research combines skills and methods from human-computer interaction (HCI) with the concepts of social science, and especially in deliberative democracy discussed above. I argue that use of experimental methods and field trials allow empirically validating the impacts of the design on the deliberation. This empirical and evidence based validation will provide a stronger point of argumentation than the current research in this domain. Use of experimentation and field trials is a standard procedure in HCI \citeaffixed{brown11,oulasvirta2012}{e.g.}, but less used in political science currently \citeaffixed{green03,stoker10}{e.g.}.
 
 
-\section{Research statement}
+\section{Approach}
 
-I have above identified two gabs. Firstly, the empirical research in online deliberation has focused on behaviors of use, but it has not examined the systems as a designed technical apparatus. However, scholars such as \citeasnoun{wright12}, argue that this side should be further studied. Secondly, the online forum research done in HCI or computer-supported collaboration has not applied the concept of deliberation and the previous research and definitions made by political scientists and online deliberation research. 
+I have above identified two gaps. Firstly, the empirical research in online deliberation has focused on behaviors of use, but it has not examined the systems as a designed technical apparatus and scholars such as \citeasnoun{wright12}, argue that this side should be further studied. Secondly, the online forum research done in HCI or computer-supported collaboration has not applied the concept of deliberation and the previous research and definitions made by political scientists and online deliberation research. 
 
-The focus on the technical enablers evolves from \possessivecite{stromer-galley04} concepts '\textit{interactivity-as-product}' and '\textit{interactivity-as-process}'. She makes a distinction between the technical apparatus and the participation as an activity. The participation tool as a product is designed and built to certain uses. The system design should take into account the social context of use, the technical affordances and limitations, and feedback mechanics of the system, as they all play a significant role in the system adaptation and use. However, these factors are strongly linked together: e.g. allowing the system to be anonymous impacts the social context of use, even while anonymity is more a technical factor.
+% The focus on the technical enablers evolves from \possessivecite{stromer-galley04} concepts '\textit{interactivity-as-product}' and '\textit{interactivity-as-process}'. She makes a distinction between the technical apparatus and the participation as an activity. The participation tool as a product is designed and built to certain uses. The system design should take into account the social context of use, the technical affordances and limitations, and feedback mechanics of the system, as they all play a significant role in the system adaptation and use. However, these factors are strongly linked together: e.g. allowing the system to be anonymous impacts the social context of use, even while anonymity is more a technical factor.
 
 Some examples of design choices impacting the social context could be a choice of moderation strategy \cite{wright07}, where as more technical choices could be a choice if the system uses anonymity \cite{kilner05}. Further elaborating this, \citeasnoun{kilner05} observed that in context of professional community, anonymity increased amount of disrespectful comments, but between pseudonymous interaction and interaction with one's real name there was no difference. I suggest that these works could explicitly apply the well studied framework of deliberation discussed above to report their findings.
 
-As stated above, this research proposal aims to study the role of design in the participation, and apply thee different approaches of deliberation in the analysis. To illustrate, the questions can be phrased
+As stated above, this research proposal aims to study the role of design in the participation, and apply thee different approaches of deliberation in the analysis. My analysis framework focuses on the three different aspects discussed above,
 
 \begin{enumerate}
 \item How does the design affect uptake and use of the participation system?
@@ -74,59 +74,82 @@ The second question studies the content produced by the users. Again, this is no
 The last question focuses again on the users and on their experience of the system. As pointed out by \citeasnoun{baek11}, the experience of the participants should be used to evaluate the success of deliberation and discussion \citeaffixed{coleman12}{also highlighted in}. They argue that the deliberation depends on the perceived heterogeneity, not only about the true heterogeneity of the population. Even while they do not make the clear link, I see the perceived experience related to the social context discussed above. Also, in general focus on experience is seen important in modern HCI research, where the user experience is seen to impact product's success. Therefore, studies should also take account this kind of subjective feeling, and in the deliberative system design the aim should be the development of good participation experience, not only good objectively measured quality.
 
 
-\section{Approach}
+\section{Research statement}
 
 As explained above, this research proposal aims to study how design choices impact the deliberativeness of online forum. As discussed above, the concept of deliberativeness is divided into three domains: quantity, quality and experience. These will act as dependent variables, i.e. the impact of the design choices made will be examined using these three aspects.
 
-The approach, as hinted above uses experimental approach and field trials to study the impact of single design choices. This approach is often used in HCI, and use of experimental methods is also known in political science \cite{brown11,green03,stoker10}. Also online forum research, the potential for this kind of approach has been detected: \citeasnoun{wright12} has suggested empirical testing as one of the future research needs in online domain
+% The approach, as hinted above uses experimental approach and field trials to study the impact of single design choices. This approach is often used in HCI, and use of experimental methods is also known in political science \cite{brown11,green03,stoker10}. Also online forum research, the potential for this kind of approach has been detected: 
+
+As \citeasnoun{wright12} argues
 
 \begin{quote}
 Put simply, e-democracy tools can themselves be viewed as discretely designed interfaces that can be embedded with specific institutional norms, values and procedures \cite{wright07}. Experimental research designs would allow these claims to be tested in depth.
 \end{quote}
 
-\begin{table}
-\begin{tabular}{lp{.6\textwidth}}
-\toprule
-\multicolumn{2}{l}{\textbf{Social structure}} \\
-existing participation & \citeasnoun{Sukumaran2011} \\
-moderation & \citeasnoun{wright07} \\
-\hline
-\multicolumn{2}{l}{\textbf{Affordances \& limitations}} \\
-anonymity & \citeasnoun{kilner05}, \citeasnoun{donath99} \\
-user interface & \citeasnoun{eklundh94}, \citeasnoun{Ghosh2011} \\
-\hline
-\multicolumn{2}{l}{\textbf{Feedback mechanics}} \\
-voting & \citeasnoun{Ghosh2011} \\
-\toprule
-\end{tabular} 
-\caption{Possible modalities and related research}
-\label{tab:modalities}
-\end{table}
+%\begin{table}
+%\begin{tabular}{lp{.6\textwidth}}
+%\toprule
+%\multicolumn{2}{l}{\textbf{Social structure}} \\
+%existing participation & \citeasnoun{Sukumaran2011} \\
+%moderation & \citeasnoun{wright07} \\
+%\hline
+%\multicolumn{2}{l}{\textbf{Affordances \& limitations}} \\
+%anonymity & \citeasnoun{kilner05}, \citeasnoun{donath99} \\
+%user interface & \citeasnoun{eklundh94}, \citeasnoun{Ghosh2011} \\
+%\hline
+%\multicolumn{2}{l}{\textbf{Feedback mechanics}} \\
+%voting & \citeasnoun{Ghosh2011} \\
+%\toprule
+%\end{tabular} 
+%\caption{Possible modalities and related research}
+%\label{tab:modalities}
+%\end{table}
 
-Even while there is existing theoretical and (quasi)experimental research (see Table \ref{tab:modalities}), the three different domains discussed above are not examined together, nor has the research applied the deliberative approach. This has also been pointed in \possessivecite{wright12} work. In this research proposal the conditions are related to the discussion system, e.g.:
+Even while there is existing theoretical and (quasi)experimental research, the three different domains discussed above are not examined together, nor has the research applied the deliberative approach. In this research proposal the conditions are related to the discussion system, e.g.:
 
 \begin{itemize}
-\item How does \textbf{anonymity} impact who participate and the equality of participation?
-\item How does \textbf{possibility to vote messages up or down} impact the objective and subjective quality of participation?
-\item How does \textbf{limitations on message length} impact the equality and quality of participation?
-\item How can \textbf{message threading} support discursive communication when compered to more linear communication, and what is the impact on experienced quality?
+\item How does \textbf{identity management} (e.g. anonymity) impact who participate and the equality of participation?
+\item How does \textbf{social feedback} (e.g. voting) impact the objective and subjective quality of participation?
+%\item How does \textbf{limitations on message length} impact the equality and quality of participation?
+\item How can \textbf{format of messaging} (e.g. threading, message length) support discursive communication when compered to more linear communication, and what is the impact on experienced quality?
 \end{itemize}
 
-The data will be collected using three approaches: in certain cases a laboratory study is possible and can be used to examine the participation \citeaffixed{Sukumaran2011}{e.g.}, however more viable is  to set up a field trial environment for discussion and examine that discussion. For example, research could be conducted using the university's classes and the online support discussions in those as the main sample. This way the participants will have a motivation using the system, but the study is conducted in the wild. This requires strong collaboration with the organizers, but will ensure certain level of participation. Naturally, other organizations can also be used to conduct this study, however the organization should provide the motivation to use and participate in the platform, so that the field research is not taking place in void. Lastly, after a modification has been introduced to the discussion system the data before and after the modification can be used to examine impact caused by the change \citeaffixed{kilner05}{e.g.}.
+The data will be collected using three approaches: in certain cases a laboratory study is possible and can be used to examine the participation \citeaffixed{Sukumaran2011}{e.g.}, however more viable is  to set up a field trial environment for discussion and examine that discussion. For example, research could be conducted using the university's classes and the online support discussions in those as the main sample. This way the participants will have a motivation using the system, but the study is conducted in the wild. This requires strong collaboration with the organizers, but will ensure certain level of participation. Naturally, other organizations can also be used to conduct this study, however the organization should provide the motivation to use and participate in the platform, so that the field research is not taking place in void. Lastly, after a modification has been introduced to the discussion system the data before and after the modification can be used to examine impact caused by the change \citeaffixed{kilner05}{e.g.}, i.e. run a natural experiment.
 
-The former two approaches allow the stronger control of the phenomena in question, such as anonymity. Naturally, the participation is also context sensitive: in different forums different practices may exists and those impact the behavior. Therefore, the context factors must be controlled. One approach is to separate the participants in condition groups, and these groups are displayed different content, so apply the classical A/B--testing used in HCI. For example, in case of anonymity, in the forum two separate groups are created, one for anonymous condition and the other for the condition showing users' names. If a participant is chosen in the anonymous condition, the participant will be able to discuss only with other people with the same condition: this way, there will not be contamination caused by the different conditions -- which would impact e.g. to the social context and as such could impact the results \cite{Sukumaran2011}. The argument in these cases is that other factors impacting participation can be stabilized, and therefore differences -- if any -- are caused by the phenomena studied.
+% The former two approaches allow the stronger control of the phenomena in question, such as anonymity. Naturally, the participation is also context sensitive: in different forums different practices may exists and those impact the behavior. Therefore, the context factors must be controlled. One approach is to separate the participants in condition groups, and these groups are displayed different content, so apply the classical A/B--testing used in HCI. For example, in case of anonymity, in the forum two separate groups are created, one for anonymous condition and the other for the condition showing users' names. If a participant is chosen in the anonymous condition, the participant will be able to discuss only with other people with the same condition: this way, there will not be contamination caused by the different conditions -- which would impact e.g. to the social context and as such could impact the results \cite{Sukumaran2011}. The argument in these cases is that other factors impacting participation can be stabilized, and therefore differences -- if any -- are caused by the phenomena studied.
 
-The latter approach, using the data of change in an existing system, is not as controlled: the difference may not be caused only by the change in the forum, but instead could be related to the time and seasonal differences. However, the benefit of this approach is the possibility to achieve high $n$, which in laboratory and field trials is harder to achieve, especially when the object of testing is an interactive system. However, when the sample is large enough, the impact of the phenomena studied should be visible in the data.
+% The latter approach, using the data of change in an existing system, is not as controlled: the difference may not be caused only by the change in the forum, but instead could be related to the time and seasonal differences. However, the benefit of this approach is the possibility to achieve high $n$, which in laboratory and field trials is harder to achieve, especially when the object of testing is an interactive system. However, when the sample is large enough, the impact of the phenomena studied should be visible in the data.
 
-\section{Conclusions}
+\section{Plan of Attack}
 
-This research proposal examined a gap in online deliberation research: even while several studies have examined the discussion and participation in these, the design choices and their impact on the discussion and participation have been studied less. However, if by adapting the system we can achieve the deliberative ideal, these changes can impact the utilization of online deliberation in the future. Especially, as in the modern era participation is vital part of the Web, not limited to political participation, the societal impact of online deliberation research is high.
+The work on my thesis will begin with a 9 month research visit to UC Berkeley, where the focus will be on the questions related to identity management; after which the focus will be conducting 1-2 studies per half and publish them in highly respected forums, as described below.
 
-I suggest that deliberative participation consists of quantity, quality and experience. These dimensions must be taken on account when evaluating the platform and changes made into it. For example, a research question for this study could be: "How did anonymity impact the perceived quality of the discussion?" -- highlighting the design choice (anonymity) and the dimension studied (experience).
+\begin{table*}[!h]
+\begin{tabular}{p{.2\textwidth}p{.5\textwidth}p{0.3\textwidth}}
+Half & Research & Studies \\ 
+\hline 
+H2 2013 \newline H1 2014 & Research exchange at Berkeley: 1-3 experiments on identity management; potential publication venues ACM Group \& CSCW & 10 credits @ Berkeley \\ 
+\hline
+H2 2014 & 1-2 studies on identity management and potential cross-cultural comparison; potential publication venues New Media \& Society, Journal of Computer Mediated Communication & Johdatus yliopisto-opetukseen (10 credits), HCI courses (6 credits), seminar + related courses (7 credits), general studies (5 credits) \\ 
+H1 2015 & 1-2 studies on social feedback and format of messaging; potential publication venues CHI & HCI courses (6 credits), seminar + related courses (7 credits), summer school (5 credits) \\ 
+\hline
+H2 2015 \newline H1 2016 & 1-2 studies on computational feedback, potential publication venues AMC WSDM, computer science social review & scientific activities (5 credits) \\ 
+\hline
+H2 2016 & Work on thesis & \\ 
+H1 2017 & Thesis defense & \\ 
+\hline 
+\end{tabular} 
+\end{table*}
 
-Lastly, this research proposal and the aims suggest the use of experimental approach: this way rigorous analysis of the impact of single design choices can be made. Experiments can be organized in a lab study form or in field trials, where I have strong preference to conduct field trials to gain better validity of the results. Also, potential data sources are changes made in commenting systems e.g. in newspapers web sites. Even while this environment can not be controlled by the researcher, the sample size are large. All of these data can be analyzed using the quantity, quality and experience -approach discussed above.
+Thesis work will be funded by project work\footnote{TEKES, LEAD until end of 2014, further projects will be investigated, such as the Sanoma Foundation, TEKES and Academy of Finland}, and I will apply for scholarships during 2014.
 
-\newpage
+%\section{Conclusions}
+
+%This research proposal examined a gap in online deliberation research: even while several studies have examined the discussion and participation in these, the design choices and their impact on the discussion and participation have been studied less. However, if by adapting the system we can achieve the deliberative ideal, these changes can impact the utilization of online deliberation in the future. Especially, as in the modern era participation is vital part of the Web, not limited to political participation, the societal impact of online deliberation research is high.
+
+%I suggest that deliberative participation consists of quantity, quality and experience. These dimensions must be taken on account when evaluating the platform and changes made into it. For example, a research question for this study could be: "How did anonymity impact the perceived quality of the discussion?" -- highlighting the design choice (anonymity) and the dimension studied (experience).
+
+%Lastly, this research proposal and the aims suggest the use of experimental approach: this way rigorous analysis of the impact of single design choices can be made. Experiments can be organized in a lab study form or in field trials, where I have strong preference to conduct field trials to gain better validity of the results. Also, potential data sources are changes made in commenting systems e.g. in newspapers web sites. Even while this environment can not be controlled by the researcher, the sample size are large. All of these data can be analyzed using the quantity, quality and experience -approach discussed above.
 
 \bibliographystyle{apsr}
 \begin{small}
